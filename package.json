@@ -1,0 +1,19 @@
+{
+  "name": "ga-jeopardy",
+  "version": "1.0.0",
+  "description": "Google Assistant jeopardy game",
+  "main": "server.js",
+  "dependencies": {
+    "actions-on-google": "^1.0.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request-json": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}

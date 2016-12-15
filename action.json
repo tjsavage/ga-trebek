@@ -1,0 +1,47 @@
+{
+  "versionLabel": "jeopardy v1",
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "ga-jeopardy",
+    "voiceName": "male_1"
+  },
+  "actions": [
+    {
+      "description": "Launch intent",
+      "initialTrigger": {
+        "intent": "assistant.intent.action.MAIN",
+        "queryPatterns": [
+          {
+            "queryPattern": "Get me trebek"
+          },
+          {
+            "queryPattern": "Let me talk to trebek"
+          },
+          {
+            "queryPattern": "Nerdsnipe Esthena"
+          }
+        ]
+      },
+      "httpExecution": {
+        "url": "https://ga-trebek.herokuapp.com"
+      }
+    },
+    {
+      "description": "Ask a question",
+      "initialTrigger": {
+        "intent": "ASK_QUESTION",
+        "queryPatterns": [
+          {
+            "queryPattern": "ask me a question"
+          },
+          {
+            "queryPattern": "next question"
+          }
+        ]
+      },
+      "httpExecution": {
+        "url": "https://ga-trebek.herokuapp.com"
+      }
+    }
+  ]
+}
